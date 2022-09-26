@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylo Data Storage</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body class="h-screen flex justify-center items-center bg-veryDarkBlue font-raleway relative" style="font-size: 14px;">
+    <div class="absolute hidden md:block -bottom-10 -z-10 w-full ">
+        <img src="images/bg-desktop.png" alt="">
+    </div>
+    <div class="absolute block md:hidden -bottom-10 -z-10 max-w-xl">
+        <img src="images/bg-mobile.png" alt="">
+    </div>
+    <section class=" flex flex-col md:flex-row justify-center items-center gap-12 container ">
+        <div class="flex flex-col justify-center p-12 pr-36  bg-darkBlue rounded-lg "
+            style="border-top-right-radius: 120px;">
+
+            <img src="images/logo.svg" alt="logo">
+            <div class="flex gap-3 items-center mt-8">
+                <div class="bg-veryDarkBlue p-3 rounded-lg"><img src="images/icon-document.svg" alt="icon"></div>
+                <div class="bg-veryDarkBlue p-3 rounded-lg"><img src="images/icon-folder.svg" alt="icon"></div>
+                <div class="bg-veryDarkBlue p-3 rounded-lg"><img src="images/icon-upload.svg" alt="icon"></div>
+            </div>
+        </div>
+        <div class="p-12 flex flex-col bg-darkBlue items-end mt-auto rounded-lg text-paleBlue max-w-lg relative">
+            <div class="absolute hidden md:block bg-paleBlue rounded-lg -top-8 p-4 text-grayishBlue text-lg">
+                <span class="font-bold text-darkBlue">185 </span>GB Left
+            </div>
+            <div class="absolute block md:hidden bg-paleBlue rounded-lg -bottom-8 p-4  text-grayishBlue text-lg">
+                <span class="font-bold text-darkBlue">185 </span>GB Left
+            </div>
+
+            <p>You've used <span class="font-bold">815 GB </span> of your storage</p>
+            <div class="w-full bg-veryDarkBlue rounded-full mt-4 text-veryDarkBlue relative">x
+                <div class="w-2/3 rounded-full mt-4 absolute bg-grayishBlue text-grayishBlue bottom-0">x</div>
+
+            </div>
+            <div class="flex w-full justify-between items-center mt-2 font-bold">
+                <p>0 Gb</p>
+                <p>1000 Gb</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
